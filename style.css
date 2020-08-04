@@ -19,16 +19,72 @@
     --color-box-base: #FFFFFF;
     --color-box-footer: #FAFAFC;
     --color-small-info: #C1BCCC;
-    font-size: 60%; /* controle das medidas rem */
+    font-size: 60%; /* - Tamanho da fonte: 16px -> 100% -> 1rem 
+                       - Controle das medidas rem baseia-se no font-size da root! 
+                       - Controle das medidas % baseia-se no font-size acima dele na cascata html ou do css!
+                       - Mobile first !!!!! Comece do pequeno pro grande, pois facilita na responsividade.
+                    */
+}
+
+html, body{
+    height: 100vh;
 }
 
 body{
     background-color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+body, input, button, textarea {
+    font: 500 1.6rem Poppins;/*weight size family*/
+    color: var(--color-text-base);
+}
+
+#container{
+    width: 90vw;
+    max-width: 700px;
+}
+
+/*Tira toda as margins e paddins de TODO o conteúdo*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Medindo o tamanho da caixa pela bordar e n pelo conteudo.*/
+}
+
+
+
+
+
+
+
+
+
+
 /*
-- CSS (CASCADING STYLESHEET) é uma folha de estilo para o HTML.
+Explicação do BOX MODEL 
+#container{
+    border: 1px solid;
+    padding: 10px 40px 20px 2px; /*São os espaços do preenchimento de DENTRO da caixa (sentido horário=cima,right,bottom and left). Pode fazer cada uma separadamente./
+    margin: 40px 10px;/*São os espaços de FORA da caixa (sentido horário). Pode fazer cada uma separadamente./
+    width: 300px;
+    height: 300px;
+}
+
+DICAS:
+    - CSS (CASCADING STYLESHEET) é uma folha de estilo para o HTML.
     - Um atributo id pode ser usado no CSS usando # antes do nome.
     - Nível de força de cascata: nível de cascata > id > class > tag.
     - O style.css só pega para o mesmo nível. P/ outros vc muda o href do link no html. 
+    - Display diz respeito aos elementos q estão dentro da "caixa". O display block 
+      bloqueia a linha para um elemento até q ele encontre um elemento display inline q coloca os
+      seus irmãos de display lado a lado. O display flex deixa os elementos flexíveis dento da caixa,
+      trocando a leitura de um abaixo do outro pra um ao lado do outro. 
+      Obs.: Dentro da caixa: Flex e grid.
+            Fora da caixa: Block e inline.
+    - O tamanho vw ou vh diz respeito ao q a gente está vendo na tela. 
+      Ele divide na quantidade de pedaços máximos, mas ocupa só oq eu falo.
+    - O tamanho px é um valor FIXO.
 */
