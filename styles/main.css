@@ -26,15 +26,16 @@
                     */
 }
 
-html, body{
+html, 
+body{
     height: 100vh;
 }
 
 body{
     background-color: var(--color-background);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /*Mexe no alinhamente horizontal*/
+    justify-content: center; /*JUSTIFICAR ! Mexe no alinhamente horizontal/vertical. Só em conjunto com o display flex*/
 }
 
 body, input, button, textarea {
