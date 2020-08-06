@@ -48,6 +48,12 @@ body, input, button, textarea {
     max-width: 700px;
 }
 
+@media(min-width: 700px){
+    :root{
+        font-size: 63%;
+    }
+}
+
 /*Tira toda as margins e paddins de TODO o conteúdo*/
 *{
     padding: 0;

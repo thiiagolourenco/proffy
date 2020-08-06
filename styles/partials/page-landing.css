@@ -1,7 +1,3 @@
-:root{
-    font-size: 40%;
-}
-
 #page-landing{
     background: var(--color-primary);
 }
@@ -80,7 +76,7 @@
 }
 
 .total-connection{
-    font-size: 2rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,5 +91,46 @@
 @media(min-width: 1100px){
     #page-landing #container{
         max-width: 1100px;
+        display: grid; /*O grid funciona da mesma maneira q no mat-grid do angular
+                         Nos iremos definir o nº de colunas e linhas na página.*/
+        grid-template-columns: 2fr 1fr 2fr; /*Define a qtd de coluna. Podemos definir em % ou em fr(frações, ex.: 1fr 1fr = 2 colunas iguais) */
+        grid-template-rows: 350px 1fr; /*Define a qtd de linhas. Podemos definir em % ou em fr*/
+        grid-template-areas: /*Define as áreas do grid, para q vc defina os quadradrinhos da página.*/
+        "proffy image image" /*linha 1 do grid*/
+        "button button texting"; /*linha 2 do grid*/
+        gap: 60px;/*Podemos colocar separadamente por coluna e por linha*/
+    }
+
+    .logo-container{
+        grid-area: proffy; /*Sem as aspas*/
+        text-align: initial;
+        align-self: center;
+    }
+
+    .logo-container img{
+        height: 100%;
+    }
+
+    .hero-image{
+        grid-area: image;
+        height: 350px;
+    }
+
+    .buttons-container{
+        grid-area: button;
+        justify-content: flex-start;
+    }
+
+    .total-connection{
+        grid-area: texting;
+        align-self: center;
+        justify-self: end;
     }
 }
+
+@media(max-width: 699px){
+    :root{
+        font-size: 40%;
+    }
+}
+
