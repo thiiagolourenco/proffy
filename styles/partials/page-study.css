@@ -277,6 +277,9 @@
         width: 240px;
         font-size: 16px;
         justify-content: center;
-        margin-left: 16px;
+    }
+
+    .teacher-item footer button img{
+        margin-right: 16px;
     }
 }
