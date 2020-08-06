@@ -264,7 +264,7 @@
         margin-bottom: 0;
     }
 
-    .teacher-item footer p { /*Pega só o primeiro nível*/
+    .teacher-item footer p { /*Pega só o primeiro nível (>)*/
         padding: 0 0;
     }
 
