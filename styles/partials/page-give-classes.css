@@ -117,7 +117,8 @@
 
 #page-give-classes main fieldset .input-block+.input-block,/*nesse caso o + está falando: pegue o input-block q tem um outro input-block antes dele*/
 #page-give-classes main fieldset .input-block+.textarea-block,
-#page-give-classes main fieldset .input-block+.select-block{
+#page-give-classes main fieldset .input-block+.select-block,
+#page-give-classes main fieldset .select-block+.input-block{
     margin-top: 2.4rem;
 }
 
@@ -147,8 +148,9 @@
         column-gap: 1.6rem;
     }
 
-    #page-give-classes main fieldset .schedule-item .input-block+.input-block,
-    #page-give-classes main fieldset .schedule-item .input-block+.select-block{
+
+    #page-give-classes #schedule-items .input-block+.input-block,
+    #page-give-classes #schedule-items .select-block+.input-block{
         margin-top: 0;
     }
 
