@@ -1,0 +1,27 @@
+{
+  "name": "proffy",
+  "version": "1.0.0",
+  "description": "Projeto com objetivo de criar uma plataforma de estudo online em uma semana na maratona NLW#2.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiiagolourenco/proffyNLW.git"
+  },
+  "keywords": [],
+  "author": "Thiago Lourenço",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiiagolourenco/proffyNLW/issues"
+  },
+  "homepage": "https://github.com/thiiagolourenco/proffyNLW#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
