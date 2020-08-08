@@ -22,7 +22,7 @@ const proffys =
       time_from: [720],
       time_to: [1200]
     }
-  ]
+  ];
 
 const subjects = [
   'Artes',
@@ -45,7 +45,7 @@ const weekdays = [
   'Quinta-feira',
   'Sexta-feira',
   'Sábado',
-]
+];
 
 //funcionalidades
 function pageLanding(req, res) {
@@ -65,7 +65,7 @@ function pageGiveClasses(req, res) {
   if (dataArrayIsEmpty) {
     userData.subject = getSubject(userData.subject);
     proffys.push(userData);
-    return res.redirect('/study')
+    return res.redirect('/study');
   }
 
   return res.render('give-classes.html', { subjects, weekdays });
@@ -84,7 +84,7 @@ const nunjucks = require('nunjucks');
 nunjucks.configure('src/views', {
   express: server,
   noCache: true
-})
+});
 
 //inicialização do servidor
 server.use(express.static('public'))/*Configuração de arquivos estáticos(css, imagens, scripts)*/
