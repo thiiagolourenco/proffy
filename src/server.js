@@ -1,79 +1,4 @@
-const proffys =
-  [
-    {
-      name: 'Diego Fernandes',
-      avatar: 'https://avatars2.githubusercontent.com/u/2254731?s=460&amp;u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&amp;v=4',
-      whatsapp: '88889999',
-      bio: 'Entusiasta das melhores tecnologias de química avançada. Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já passaram por uma das minhas explosões.',
-      subject: 'Química',
-      cost: '20',
-      weekday: [0],
-      time_from: [720],
-      time_to: [1200]
-    },
-    {
-      name: 'Thiago Lourenço',
-      avatar: 'https://avatars1.githubusercontent.com/u/51346622?s=460&u=b7bdd098d64369dc034135467bab9f103dd7d287&v=4',
-      whatsapp: '88889999',
-      bio: 'Entusiasta das melhores tecnologias de front-end avançado. Apaixonado por desenvolver coisas em e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já passaram por uma das minhas aulas.',
-      subject: 'Programação',
-      cost: '40',
-      weekday: [1],
-      time_from: [720],
-      time_to: [1200]
-    }
-  ];
-
-const subjects = [
-  'Artes',
-  'Biologia',
-  'Ciências',
-  'Educação física',
-  'Física',
-  'Geografia',
-  'História',
-  'Matemática',
-  'Português',
-  'Química'
-];
-
-const weekdays = [
-  'Domingo',
-  'Segunda-feira',
-  'Terça-feira',
-  'Quarta-feira',
-  'Quinta-feira',
-  'Sexta-feira',
-  'Sábado',
-];
-
-//funcionalidades
-function pageLanding(req, res) {
-  return res.render('index.html');
-}
-
-function pageStudy(req, res) {
-  const filters = req.query;
-  return res.render('study.html', { proffys, filters, subjects, weekdays });//render(páginaQueRenderizada, objetoQueEnviará, outroObj...pode ser vários)
-}
-
-function pageGiveClasses(req, res) {
-  const userData = req.query;
-
-  const dataArrayIsEmpty = Object.keys(userData).length > 0;
-
-  if (dataArrayIsEmpty) {
-    userData.subject = getSubject(userData.subject);
-    proffys.push(userData);
-    return res.redirect('/study');
-  }
-
-  return res.render('give-classes.html', { subjects, weekdays });
-}
-
-function getSubject(subjectNumber) {
-  return subjects[subjectNumber - 1];
-}
+const { pageLanding, pageStudy, pageGiveClasses, pageGiveClassesSave } = require('./utils/page.js');
 
 //servidor
 const express = require('express');
@@ -87,10 +12,12 @@ nunjucks.configure('src/views', {
 });
 
 //inicialização do servidor
-server.use(express.static('public'))/*Configuração de arquivos estáticos(css, imagens, scripts)*/
+server.use(express.urlencoded({ extended: true }))/*Receber o req.body*/
+  .use(express.static('public'))/*Configuração de arquivos estáticos(css, imagens, scripts)*/
   .get('/', pageLanding)/*get(pedido, function(requisição com dados, reposta))*/
   .get('/study', pageStudy)
   .get('/give-classes', pageGiveClasses)
+  .post('/save-classes', pageGiveClassesSave)//rq POST para enviar dados de maneira mais segura/"escondidos"
   .listen(5500);
 
 
