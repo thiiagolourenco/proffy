@@ -51,7 +51,7 @@ Você pode visualizar o layout do projeto no Figma, ele está dividido em duas v
 
 ## 🚀 Como rodar o projeto
 
-Podemos considerar este projeto como sendo divido em três partes:
+Podemos considerar este projeto como sendo divido em duas partes:
 
 1. Back-End,
 2. Front-End.
