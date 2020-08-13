@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Proffy" title="Proffy" src=".github/Proffy/public/images/" width="220px" />
+    <img alt="Proffy" title="Proffy" src=".github/Proffy/public/images/favicon.png" width="220px" />
 </h1>
 
 <p align="center">
@@ -25,10 +25,6 @@
 </p>
 
 <br>
-
-<p align="center">
-  <img alt="Ecoleta" src=".github/layout.png" width="100%">
-</p>
 
 ## 🚀 Tecnologias
 
