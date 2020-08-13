@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Proffy" title="Proffy" src=".github/Proffy/public/images/favicon.png" width="220px" />
+    <img alt="Proffy" title="Proffy" src="thiiagolourenco/Proffy/public/images/favicon.png" width="220px" />
 </h1>
 
 <p align="center">
@@ -77,7 +77,7 @@ $ git clone https://github.com/thiiagolourenco/Proffy
 $ cd proffy
 ```
 
-## Rodando o back end (servidor)
+## Rodando o Back-end (servidor)
 
 ```bash
 # Vá para a pasta da aplicação Front-End
@@ -141,6 +141,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 ---
 
 Feito por Thiago Lourenço
+Inpiração do template README feito por Leon Carvalho(https://github.com/leon-carvalho)
 
 <a href="https://www.linkedin.com/in/thiago-lourenço-201053173/">
   <img alt="Feito por thiiagolourenco" src="https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thiago-lourenço-201053173/">
