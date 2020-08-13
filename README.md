@@ -57,6 +57,7 @@ Podemos considerar este projeto como sendo divido em três partes:
 2. Front-End.
 
 💡 Tanto o Front-End quanto o Back-end estão na divididos na pasta src e public.
+<br>
 💡 O Back-end precisa está executando para que tudo funcione bem.
 
 ### Pré-requisitos
