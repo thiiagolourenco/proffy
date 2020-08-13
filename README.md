@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Proffy" title="Proffy" src="thiiagolourenco/Proffy/public/images/favicon.png" width="220px" />
+    <img alt="Proffy" title="Proffy" src="./public/images/favicon.png" width="220px" />
 </h1>
 
 <p align="center">
@@ -30,8 +30,8 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Node.js](https://nodejs.org/en/) Back-end
-- [JavaScript, HTML e CSS] Front-end
+- [Node.js](https://nodejs.org/en/) (Back-end),
+- JavaScript, HTML e CSS (Front-end).
 
 ## 💻 Projeto
 
