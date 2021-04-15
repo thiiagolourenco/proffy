@@ -78,45 +78,17 @@ $ git clone https://github.com/thiiagolourenco/Proffy
 $ cd proffy
 ```
 
-## Rodando o Back-end (servidor)
-
-```bash
-# Vá para a pasta da aplicação Front-End
-$ cd server
-
-# Instale as dependências
-$ npm install
-# Ou use Yarn se preferir
-$ yarn
-
-# Rode as migrations do banco de dados
-$ npm run knex:migrate
-# Ou use Yarn
-$ yarn knex:migrate
-
-# Execute a aplicação em modo de desenvolvimento
-$ npm run start
-# Ou use Yarn se preferir
-$ yarn start
-
-# A aplicação será aberta na porta:5500
-```
-
 ### Rodando a aplicação
 
 ```bash
-# Vá para a pasta da aplicação Front-End
-$ cd web
+- Vá para a pasta:
+$ cd proffy
 
-# Instale as dependências
+- Instale todas as dependências:
 $ npm install
-# Ou use Yarn se preferir
-$ yarn
 
-# Execute a aplicação em modo de desenvolvimento
-$ npm run start
-# Ou use Yarn se preferir
-$ yarn start
+- Execute o server:
+$ npm run dev
 
 # A aplicação será aberta na porta:5500 - acesse http://localhost:5500
 ```
