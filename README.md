@@ -42,11 +42,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Você pode visualizar o layout do projeto no Figma, ele está dividido em duas versões:
 
 - <div style="display:flex;align-items:center;">
-      Layout do projeto web <img src="https://img.shields.io/badge/-Figma-rebeccapurple?&logo=Figma&logoColor=white&link=https://www.notion.so/Layout-Proffy-3d5f45f54ec54ef9b2103565b7cce4e1)" style="margin-left:8px;"/>
+      Layout do projeto web <img src="https://www.notion.so/Layout-Proffy-3d5f45f54ec54ef9b2103565b7cce4e1)" style="margin-left:8px;"/>
   </div>
 
 - <div style="display:flex;align-items:center;margin-top:12px;">
-      Layout do projeto mobile <img src="https://img.shields.io/badge/-Figma-purple?&logo=Figma&logoColor=white&link=https://www.notion.so/Layout-Proffy-3d5f45f54ec54ef9b2103565b7cce4e1)" style="margin-left:8px;"/>
+      Layout do projeto mobile <img src="https://www.notion.so/Layout-Proffy-3d5f45f54ec54ef9b2103565b7cce4e1)" style="margin-left:8px;"/>
   </div>
 
 ## 🚀 Como rodar o projeto
