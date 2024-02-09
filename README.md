@@ -113,13 +113,10 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ---
 
-Feito por Thiago Lourenço
+Made with 💜 by Thiago Lourenço [Check out my LinkedIn](https://www.linkedin.com/in/thiiagolourenco)
+
 <br>
 Inpiração do template README feito por Leon Carvalho(https://github.com/leon-carvalho)
-
-<a href="https://www.linkedin.com/in/thiago-lourenço-201053173/">
-  <img alt="Feito por thiiagolourenco" src="https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thiago-lourenço-201053173/">
-</a>
 
 # Observações
 
